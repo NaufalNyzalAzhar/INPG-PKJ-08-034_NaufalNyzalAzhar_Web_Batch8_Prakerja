@@ -53,3 +53,30 @@ form input[type="submit"] {
 }
 
 /* tambahkan CSS untuk section profile disini */
+#profile {
+  display: flex;
+}
+#profile .profile-photo img {
+  border-radius: 50%;
+  border: 3px solid orange;
+  width: 244px;
+  height: 240px;
+}
+#profile .profile-text {
+  padding: 20px;
+}
+#profile .profile-text .action button {
+  padding: 8px 15px;
+  border-radius: 20%;
+  border: 1px solid;
+}
+#profile .profile-text .action button:hover {
+  background-color: blue;
+  color: white;
+}
+#detail {
+  padding: 20px;
+}
+#detail table tr td {
+  padding: 10px;
+}

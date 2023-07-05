@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Button Function</title>
+  <script>
+    function Hasilkan() {
+      var inputText = document.getElementById("inputText").value;
+      var inputNumber = document.getElementById("inputNumber").value;
+      var olElement = document.getElementById("outputList");
+
+      // Clear previous list items
+      olElement.innerHTML = "";
+
+      for (var i = 1; i <= inputNumber; i++) {
+        var liElement = document.createElement("li");
+        liElement.innerHTML = inputText + " - " + i;
+        olElement.appendChild(liElement);
+      }
+    }
+  </script>
+</head>
+<body>
+  <input type="text" id="inputText" placeholder="Input Text">
+  <input type="number" id="inputNumber" placeholder="Input Number">
+  <button onclick="Hasilkan()">Hasilkan</button>
+  <ol id="outputList"></ol>
+</body>
+</html>
